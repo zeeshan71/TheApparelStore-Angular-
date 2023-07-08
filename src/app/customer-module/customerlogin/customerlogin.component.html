@@ -1,0 +1,22 @@
+<button   class="btn btn-primary mr-1 float-right" routerLink="/login">Admin</button>
+<div class="container" > 
+<div class="form-area">
+<form #myform="ngForm" (ngSubmit)="validate(email.value, password.value)">
+  <h5 align="center">Customer Login</h5>
+  <label style="color: red;">{{message}}</label>
+    <div class="form-group">
+     <label class="email">Email</label>
+     <input type="text" class="form-control  email"  #email name="email" required placeholder="Enter Email" style="width: 70%;">
+    </div>  
+    <div class="form-group">
+        <label class="pw">Password</label>
+        <input type="password" class="form-control pw"  #password name="password" placeholder="Enter Password" style="width: 70%;">
+      </div><br>
+      <input type="submit" class="sb" value="Sign In"><br>
+      <button class="Register" routerLink="/customeregistration">Register!</button>
+
+</form>
+</div>
+</div>
+
+

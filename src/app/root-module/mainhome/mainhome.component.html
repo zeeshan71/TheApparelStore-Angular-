@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href=" " style="font-weight: bold;">The Apparel Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink=" " style="font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/login" style="font-weight: bold;">Admin<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/customerlogin" style="font-weight: bold;">Customer<span class="sr-only">(current)</span></a>
+          </li>  
+      </ul>
+    </div>
+  </nav> <br><br>
+
+<div class="container">
+<div class="card-deck">
+    <div class="card bg-primary" style="width: 40%;">
+      
+      <div class="card-body" >
+        <h5 class="card-title">Admin</h5>
+        <p class="card-text">Hey Admin of the Apparel Store, 
+            The world awaits for you to add products, delete out of fashion stock. </p>
+            <button   class="btn btn-success mr-1" routerLink="/login" style="margin-right: 10px;" >Admin</button>
+      </div>
+    </div>
+    <div class="card bg-success">
+            <div class="card-body">
+        <h5 class="card-title">Customer</h5>
+        <p class="card-text">Hello Customer, 
+            You are the most important thing to the Apparel Store. Please Explore our world of fashion wearables, and happy Shopping!!!</p>
+            <button class="btn btn-primary" routerLink="/customerlogin" >Customer</button><br><br>  
+      </div>
+    </div>
+    </div>

@@ -1,0 +1,13 @@
+<app-navbar></app-navbar><br>
+<div class="container">
+<div class="form-area">
+<form #myform="ngForm" (ngSubmit)="setpaymentmode(paymentmode.value)">
+    <label>{{message}}</label><br>  
+    <div class="form-group">
+        <label class="payment">Payment Mode</label>
+        <input type="text" class="form-control payment"  #paymentmode name="address" placeholder="Enter Payment Mode" style="width: 70%;">
+      </div>
+      <input type="submit" class="sb" value="Set Payment Mode">
+</form>
+</div>
+</div>

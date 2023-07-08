@@ -1,0 +1,14 @@
+<app-navbar></app-navbar><br>
+<label style="color: #5cb85c; font-weight: bold;">{{message}}</label>
+    <div class= "container">
+    <div class="card-deck">
+      <div class="card" *ngFor="let product of products">
+        <img src="http://localhost:8080/TheApparelStore/product/image1/{{product.id}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text" style="font-weight: bold;">Price: {{product.price | currency:'INR':'symbol-narrow'}}</p>
+          <p class="card-text"><small class="text-muted">Stock: {{product.stock}}</small></p>
+          <a  class="btn btn-primary mr-1" (click)="addtoCart(product.id)">Add to Cart</a>
+          <a  class="btn btn-primary mr-1" (click)="gotoproductdescription(product.id)" >Show More</a>
+        </div>
+      </div>

@@ -1,0 +1,23 @@
+<app-navbar></app-navbar><br>
+<div class="container" align="center">
+<div class="card mb-3" style="max-width: 540px;">
+	<div class="row no-gutters">
+	  <div class="col-md-4">
+		<img src="../../../assets/images/profile.png" class="card-img" alt="...">
+	  </div>
+	  <div class="col-md-8">
+		<div class="card-body">
+		  <h5 class="card-title">Profile</h5>
+		  <p class="card-text" style="font-weight: bold;">Email: {{customer.payload.email}}</p>
+		  <p class="card-text" style="font-weight: bold;">Name: {{customer.payload.full_name}}</p>
+		  <p class="card-text"style="font-weight: bold;">Address: {{customer.payload.shipping_address}}</p>
+		  <p class="card-text"style="font-weight: bold;">Country: {{customer.payload.country}}</p>
+		  <p class="card-text"style="font-weight: bold;">Mobile No.: {{customer.payload.phone}}</p><br>
+		  <button class="btn btn-primary mr-1" routerLink="/changepassword">Change Password</button>
+		  <button class="btn btn-primary mr-1" routerLink="/changeaddress">Change Address</button><br>
+
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>

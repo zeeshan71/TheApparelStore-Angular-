@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/customerhome" style="font-weight: bold;">The Apparel Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/customerhome" style="font-weight: bold;">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <fa-icon [icon]="cart" routerLink="/cart"  style="margin-right: 20px;color: black; font-size: 30px; cursor: pointer;"></fa-icon>
+      <fa-icon [icon]="orders" routerLink="/orders"  style="margin-right: 20px;color: black; font-size: 30px; cursor: pointer;"></fa-icon>
+      <fa-icon [icon]="profile" routerLink="/profile"  style="margin-right: 20px;color: black; font-size: 30px; cursor: pointer;"></fa-icon>
+      <fa-icon [icon]="signouticon" (click)="signout()"  style="margin-right: 20px;color: black; font-size: 30px; cursor: pointer;"></fa-icon>
+    </div>
+  </nav>
+  

@@ -1,0 +1,34 @@
+<app-navbar></app-navbar><br>
+<label style="color: red; font-weight: bold;">{{message}}</label>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card  mb-3  mb-3" style="max-width: 700px;" *ngFor="let cartitem of cartitems" >
+  <div class="row no-gutters">
+    
+    <div class="col-md-4">
+      <img src="http://localhost:8080/TheApparelStore/product/image1/{{cartitem.products[0].id}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{cartitem.products[0].name}}</h5>
+        <p class="card-text" style="font-weight: bold;">{{cartitem.products[0].description}}</p>
+        <p class="card-text" style="font-weight: bold;">Price:{{cartitem.products[0].price | currency:'INR':'symbol-narrow'}}</p><br>
+        <button class="btn btn-primary" (click)="removecartproduct(cartitem.cartid)">Remove Product</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-4 float-left">
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">Price Details</div>
+    <div class="card-body">
+    <p class="card-text">Total Price:{{totalPrice.payload | currency:'INR':'symbol-narrow' }}</p><br>
+    <button class="btn btn-primary" (click)="checkout()">Checkout</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>

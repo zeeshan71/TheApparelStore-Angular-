@@ -1,0 +1,27 @@
+<app-navbar></app-navbar><br>
+<label style="color: seagreen; font-weight: bold;">{{message}}</label>
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="card" style="width: 30rem;">
+<img src="http://localhost:8080/TheApparelStore/product/image1/{{product.id}}" class="card-img-top" alt="...">
+<img src="http://localhost:8080/TheApparelStore/product/image2/{{product.id}}" class="card-img-top" alt="...">
+</div>
+</div>
+
+<div class="col">
+    <div class="card" style="width: 30rem;">
+        <img src="http://localhost:8080/TheApparelStore/product/image3/{{product.id}}" class="card-img-top" alt="...">
+    </div><br>        
+    <div class="card text-center">
+        <div class="card-header" style="font-weight: bold;">
+          The Apparel Store
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text" style="font-weight: bold;">{{product.description}}.</p>
+          <p class="card-text" style="font-weight: bold;">Price: {{product.price | currency:'INR':'symbol-narrow'}}.</p>
+          <a  class="btn btn-primary" (click)="addtoCart(product.id)">Add to Cart</a>
+        </div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+.body, .html, .bgc{
+    height:100%;
+	margin: 0;
+    height: 100%;
+    background-image: url("../../assets/images/clothingstore.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #EAECEE ;
+
+    
+    }
+    * {
+        box-sizing: border-box;
+      }
+      .heading
+{
+	position: absolute;
+	top: 5px;
+	background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
+   color: white; /* Grey text */
+   padding: none;
+      }

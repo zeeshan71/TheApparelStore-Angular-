@@ -1,0 +1,44 @@
+<button class="btn btn-primary float-right" style="margin-right: 20px;" routerLink="/home">Home</button>
+
+<div class="container">
+
+<div class="form-area">
+  <form #myform="ngForm" (ngSubmit)="addProducts(name.value, price.value, categories.value, description.value, stock.value, image1.value, image2.value, image3.value)">
+    <div class="form-group">
+        <label>{{message}}</label><br>
+     <label class="name">Product Name</label>
+     <input type="text" class="form-control name"  #name name="name" placeholder="Product Name" style="width: 90%;">
+    </div>  
+    <div class="form-group">
+        <label class="price">Price</label>
+        <input type="text" class="form-control price"  #price name="price" placeholder="Product Price" style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="categories">Categories</label>
+        
+        <input type="text" class="form-control categories"  #categories name="categories" placeholder="Product Category" style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="desc">Description</label>
+        <input type="text" class="form-control desc"  #description name="description" placeholder="Product Description" style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="stock">Stock</label>
+        <input type="text" class="form-control stock"  #stock name="stock" placeholder="Product Stock Yes or NO?" style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label>Image 1</label>
+        <input type="file" class="form-control-file" #image1 name="image1" (change)="onFileSelect1($event)" style="color: white;">
+      </div>
+      <div class="form-group">
+        <label>Image 2</label>
+        <input type="file" class="form-control-file" #image2 name="image2" (change)="onFileSelect2($event)" style="color: white;">
+      </div>
+      <div class="form-group">
+        <label>Image 3</label>
+        <input type="file" class="form-control-file" #image3 name="image3" (change)="onFileSelect3($event)" style="color: white;">
+      </div>
+      <input type="submit" class="sb" value="Add Product">
+</form>
+</div>
+</div>

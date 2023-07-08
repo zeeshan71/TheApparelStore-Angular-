@@ -1,0 +1,33 @@
+<button class="btn btn-primary float-right" routerLink="/customerlogin" style="margin-right: 20px;">Login</button>
+<div class="container">
+<div class="form-area">
+<h5 style="font-weight: bold;" align="center"> Customer Registration</h5>
+<form #myform="ngForm" (ngSubmit)="addcustomer(email.value, password.value, full_name.value, shipping_address.value, country.value, phone.value)">
+    <div class="form-group">
+     <label class="email">Email</label>
+     <input type="text" class="form-control email"  #email name="email" placeholder="Enter Email" style="width: 70%;">
+    </div>  
+    <div class="form-group">
+        <label class="pw">Password</label>
+        <input type="password" class="form-control pw"  #password name="password" placeholder="Enter Password" style="width: 70%;">
+      </div>
+      <div class="form-group ">
+        <label class="fullname">Full Name</label>
+        <input type="text" class="form-control fullname"   #full_name name="full_name" placeholder="Enter Full Name" style="width: 70%;">
+      </div>
+      <div class="form-group">
+        <label class="shippingadd">Shipping Address</label>
+        <input type="text" class="form-control shippingadd"  #shipping_address name="shipping_address" placeholder="Enter Shipping Address" style="width: 85%;">
+      </div>
+      <div class="form-group">
+        <label class="country">Country</label>
+        <input type="text" class="form-control country"  #country name="country" placeholder="Enter Country Name" style="width: 70%;">
+      </div>
+      <div class="form-group">
+        <label class="mob">Mobile No.</label>
+        <input type="text" class="form-control mob"  #phone name="phone" placeholder="Enter Mobile Number" style="width: 70%;">
+      </div>
+      <input type="submit" class="sb" value="Register">
+</form>
+</div>
+</div>

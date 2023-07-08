@@ -1,0 +1,13 @@
+<app-navbar></app-navbar><br>
+<div class="container">
+<div class="form-area">
+<form #myform="ngForm" (ngSubmit)="changeaddress(address.value)">
+    <label>{{message}}</label><br>  
+    <div class="form-group">
+        <label class="add">New Address</label>
+        <input type="text" class="form-control add"  #address name="address" placeholder="New Address" style="width: 90%;">
+      </div>
+      <input type="submit" class="sb" value="Change Address">
+</form>
+</div>
+</div>

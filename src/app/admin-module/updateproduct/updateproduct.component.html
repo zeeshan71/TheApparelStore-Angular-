@@ -1,0 +1,31 @@
+<app-navbaradmin></app-navbaradmin><br><br>
+<div class="container">
+<div class="form-area">
+<form #myform="ngForm" (ngSubmit)="updateProduct(name.value, price.value, description.value, stock.value)">
+    <div class="form-group">
+        <label>{{message}}</label><br>
+     <label class="name">Product Name</label>
+     <input type="text" class="form-control name"  #name name="name" value={{product.name}} style="width: 90%;">
+    </div>  
+    <div class="form-group">
+        <label class="price">Price</label>
+        <input type="text" class="form-control price"  #price name="price" value={{product.price}} style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="categories">Categories</label>
+        <input type="text" class="form-control categories"  readonly #categories name="categories" value={{product.categories}} style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="desc">Description</label>
+        <input type="text" class="form-control desc"  #description name="description" value={{product.description}} style="width: 90%;">
+      </div>
+      <div class="form-group">
+        <label class="stock">Stock</label>
+        <input type="text" class="form-control stock"  #stock name="stock" value={{product.stock}} style="width: 90%;">
+      </div>
+      <input type="submit" class="sb" value="Update Product">
+</form>
+</div>
+</div>
+
+

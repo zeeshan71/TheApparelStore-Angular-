@@ -1,0 +1,78 @@
+label{
+
+    margin:0;
+ padding:0;
+ font-weight: bold;
+ color: white;
+ 
+}
+.form-area{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:400px;
+    height: 85%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+
+}
+h5{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    color: white;
+     
+}
+.name, .price, .categories, .desc, .stock{
+ 
+    margin:0;
+    padding:0;
+    font-weight: bold;
+    color: white;
+        
+   }
+   
+   .form-area input{
+       margin-bottom: 20px;
+       width:100%;
+   }
+   .form-area input[type=text], input[type=password], input[type=file] {
+       
+     border: none;
+     border-bottom: 2px solid white;
+     background-color: transparent;
+     outline:none;
+     height: 40px;
+     color: #ffff;
+     display: 16px;
+   }
+   :-ms-input-placeholder{
+   color: white;
+   font-weight: normal;
+       
+   }
+   ::-webkit-input-placeholder
+       {
+   color: white;
+   font-weight: normal;
+       
+   }
+   .sb {
+	font-weight:bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+}
+.sb:hover {
+  opacity: 1;
+}
+.form-control:focus {
+    border-color: none;
+    box-shadow: none;
+  }
